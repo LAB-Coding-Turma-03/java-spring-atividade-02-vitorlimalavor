@@ -15,13 +15,10 @@ public class HelloWorldController {
 		//a variável nome, contém o valor passado no browser na sua chamada
 		//Exemplo http://localhost:8080/atividades/hello?nome=felipe
 		//Considerando o exemplo acima a variável nome virá preenchida com o texto "felipe"
-		
 		//Considerando a dica acima, implemente seu código para que o programa retorne a 
 		//palavra Hello world concatenada com o nome.
 		//Exmeplo de resposta: Hello world felipe !
-		
-		
-		return ResponseEntity.ok("Hello world !");
+		return ResponseEntity.ok("Hello world " + nome + " !");
 	}
 	
 }
